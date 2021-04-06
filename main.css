@@ -1,5 +1,9 @@
 /*Start global*/
 
+body, html {
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding:0;
@@ -266,6 +270,10 @@ li {
 .profile-img {
     flex: 1;
     margin-right: 5rem;
+}
+
+.visible-mobile {
+    display: none !important;
 }
 
 .about-details {
@@ -548,6 +556,367 @@ input[type="submit"]:hover {
     }
     100%{
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    .top-nav {
+        position: relative;
+        height: 100vh;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding-top: 10rem;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-link {
+        width: 60px;
+        font-size: 4rem;
+        margin-top: 5rem;
+    }
+
+    li {
+        margin: 2rem 2rem;
+    }
+
+    .landing-text h1 {
+        font-size: 13rem;
+        padding: .5rem;
+    }
+
+    .landing-text h6 {
+        font-size: 1.8rem;
+    }
+
+    .menu-toggler {
+        top: 5rem;
+        right: 1.5rem;
+        width: 5rem;
+        height: 4rem;
+    }
+
+    .about-heading h1 {
+        font-size: 7rem;
+        opacity: .3;
+    }
+
+    .profile-img {
+        position: absolute !important;
+        top: 7% !important;
+        left: -10% !important;
+        margin: 0 auto !important;
+    }
+
+    .visible-mobile {
+        display: inline !important;
+        width: 70% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+      }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .about-details p {
+        padding-top: 275px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .social-media {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+
+    .portfolio-heading-main {
+        padding-bottom: 30%;
+        padding-top: 30%;
+        margin-bottom: 0;
+    }
+
+    .portfolio-item {
+        display: block !important;
+        margin-bottom: 5rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .has-margin-right {
+        margin-right: 0;
+        padding-top: 10%;
+    }
+    
+    .has-margin-left {
+        margin-left: 0;
+        padding-top: 10%;
+    }
+
+    .jot-image {
+        position: absolute !important;
+        top: 13% !important;
+        right: 0 !important;
+    }
+
+    .ccrj-image {
+        position: absolute !important;
+        top: 43% !important;
+        right: 0 !important;
+    }
+
+    .jerky-image {
+        position: absolute !important;
+        top: 76% !important;
+        right: 0 !important;
+    }
+
+    .portfolio-description p {
+        padding-top: 65%;
+        padding-left: 11%;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    #experience .container {
+        width: 100%;
+    }
+
+    #experience {
+        padding: 0;
+        margin: 0;
+    }
+
+    .timeline ul {
+        width: 94%;
+    }
+
+    .experience-heading-main {
+        padding-top: 30%;
+    }
+
+    #contact {
+        padding: 0;
+    }
+
+    #contact .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-heading-main {
+        padding-top: 30%;
+    }
+
+    input {
+        padding: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    input[type=submit] {
+        margin-bottom: 40%;
+        margin-top: 5%;
+    }
+
+    .up {
+        right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .top-nav {
+        position: relative;
+        height: 100vh;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding-top: 10rem;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-link {
+        width: 60px;
+        font-size: 4rem;
+        margin-top: 5rem;
+    }
+
+    li {
+        margin: 2rem 2rem;
+    }
+
+    .landing-text h1 {
+        font-size: 13rem;
+        padding: .5rem;
+    }
+
+    .landing-text h6 {
+        font-size: 1.8rem;
+    }
+
+    .menu-toggler {
+        top: 5rem;
+        right: 1.5rem;
+        width: 5rem;
+        height: 4rem;
+    }
+
+    .about {
+        padding: 0;
+    }
+
+    .about-heading h1 {
+        font-size: 7rem;
+        opacity: .3;
+    }
+
+    .profile-img {
+        position: absolute;
+        top: 7%;
+        left: -2.5%;
+        margin: 0 auto;
+    }
+
+    .visible-mobile {
+        display: inline !important;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+      }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .about-details p {
+        padding-top: 350px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .social-media {
+        margin-top: -10%;
+        margin-bottom: 30%;
+        padding-top: 0;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+
+    .portfolio-heading-main {
+        padding-bottom: 20%;
+        padding-top: 30%;
+        margin-bottom: 0;
+    }
+
+    .portfolio-item {
+        display: block !important;
+        margin-bottom: 5rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .has-margin-right {
+        margin-right: 0;
+        padding-top: 10%;
+    }
+    
+    .has-margin-left {
+        margin-left: 0;
+        padding-top: 10%;
+    }
+
+    .jot-image {
+        position: absolute;
+        top: 16%;
+        right: 0;
+    }
+
+    .ccrj-image {
+        position: absolute;
+        top: 45%;
+        right: 0;
+    }
+
+    .jerky-image {
+        position: absolute;
+        top: 77%;
+        right: 0;
+    }
+
+    .portfolio-description p {
+        padding-top: 65%;
+        padding-left: 11%;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    #experience .container {
+        width: 100%;
+    }
+
+    #experience {
+        padding: 0;
+        margin: 0;
+    }
+
+    .timeline ul {
+        width: 94%;
+    }
+
+    .experience-heading-main {
+        padding-top: 30%;
+    }
+
+    #contact {
+        padding: 0;
+    }
+
+    #contact .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-heading-main {
+        padding-top: 30%;
+    }
+
+    input {
+        padding: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    input[type=submit] {
+        margin-bottom: 40%;
+        margin-top: 5%;
+    }
+
+    .up {
+        right: 1rem;
     }
 }
 
